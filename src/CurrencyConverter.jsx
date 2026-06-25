@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import useCurrencyInfo from './hooks/useCurrencyInfo'
 import { InputBox } from './components'
+import bgImage from './assets/currency-converter-bg.jpg';
 
 function CurrencyConverter() {
     const [amount, setAmount] = useState(0);
@@ -26,7 +27,7 @@ function CurrencyConverter() {
         <div
             className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
             style={{
-                backgroundImage: `url('https://watermark.lovepik.com/photo/40172/7536.jpg_wh1200.jpg')`,
+                backgroundImage: `url(${bgImage})`,
             }}
         >
             <div className="w-full">
